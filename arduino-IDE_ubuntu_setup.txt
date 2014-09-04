@@ -1,0 +1,16 @@
+OS: ubuntu 13.10
+uname -a : Linux laptop 3.11.0-26-generic #45-Ubuntu SMP Tue Jul 15 04:02:06 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+
+Step 1. Download IDE latest
+
+Step 2. to make IDE usable WITHOUT root perms (ref. http://playground.arduino.cc/Linux/All#Permission)
+	2.1. Plug in your Arduino
+	2.2. Look at 'dmesg' output to identify vendor and product ID
+	2.3. do 'ls -lhtr /dev/tty*' on to identify the device for the Arduino
+	2.4. Note the group that the Arduino mounted character device belongs to either "dialout" or "uucp"
+	2.5. Add your user to the group identified in the last step
+	2.6. Set udev rule as given in the above mentioned link
+	2.7. Reboot, yes do that I know its a Linux
+	If the above steps do not work, read in detail the aforementioned link...!!
+
+
