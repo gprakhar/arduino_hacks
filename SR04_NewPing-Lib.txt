@@ -1,0 +1,5 @@
+Look here
+
+http://code.google.com/p/arduino-new-ping/wiki/Simple_NewPing_Example
+
+BTW change delay() to 1 sec, to be able to read the results off the Serial Monitor.
